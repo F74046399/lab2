@@ -3,22 +3,20 @@
 #include<iomanip>
 #include<cmath>
 #include<cstring>
+#include"class.h"
 using namespace std;
 
-class BMI
-{
-	public:
-		void setRecord(int h,int m)
+		void BMI::setRecord(int h,int m)
 		{
 			height=h;
 			mass=m;
 		}
 				
-		float getBmi()
+		float BMI::getBmi()
 		{			
 			return mass/pow((float)height/100,2);
 		}
-		string getCotegory()
+		string BMI::getCotegory()
 		{
 			float bmi;
 			bmi=getBmi();
@@ -64,6 +62,6 @@ class BMI
 					
 			}
 		}
-	private:
-		int height,mass;
-};
+	
+	
+
